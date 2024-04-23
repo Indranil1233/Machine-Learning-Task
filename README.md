@@ -37,17 +37,29 @@ Distribution plots are created to visualize the original and transformed data.
 
 Image Classification using CNN:
 
+This code implements a Convolutional Neural Network (CNN) model using the Keras library for image classification tasks. 
+
+The code imports the necessary modules from Keras to build and train the CNN model.
+An instance of the Sequential model is created, which allows adding layers sequentially.
+The first Convolutional layer is added.
+MaxPooling layer with a pool size of (2,2) is added to reduce spatial dimensions.
+Another Convolutional layer is added with similar parameters as the first one.
+After the convolutional and pooling layers, a Flatten() layer is added to convert the pooled feature maps into a single vector. This prepares the data for input into the fully connected layers.
+The model is compiled using compile(), specifying the optimizer as 'adam', loss function as 'binary_crossentropy' and metrics to monitor during training as 'accuracy'.
+ImageDataGenerator is used to generate augmented images for training data .
+Augmentation techniques include rescaling, shear range, zoom range, and horizontal flip.
+
+
 Anomaly Detection: Here, you'll find an implementation of an anomaly detection from scratch. The script identifies anomalies in a dataset based on deviations from a normal distribution.
 
 
 Logistic Regression from scratch :
+
 This script implements logistic regression from scratch. It includes functions for sigmoid function, log loss.
-Data Generation:
-make_classification: This function generates a random n-class classification problem. In this case, it generates 50,000 samples with 15 features, where 10 features are informative and 5 are redundant. The classes are binary, and the class separation is set to 0.7.
-Data Preprocessing:
-train_test_split: Splits the data into training and testing sets with a test size of 25%.
-StandardScaler: Standardizes features by removing the mean and scaling to unit variance.
-Initialization:
+
+Data Preprocessing is done.
+train_test_split, Splits the data into training and testing sets with a test size of 25%.
+StandardScaler, Standardizes features by removing the mean and scaling to unit variance.
 initialize_weights: Initializes the weights w to zeros and bias b to zero.
 Sigmoid Function:
 sigmoid: Implements the sigmoid activation function, which maps any real-valued number to the range [0, 1].
