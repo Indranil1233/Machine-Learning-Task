@@ -62,7 +62,6 @@ Anomaly Detection:
 Initializes an AnomalyDetector object.
 Fits the detector to the data.
 Detects anomalies in the data.
-Prints the indices of anomalies found in the data.
 
 
 Logistic Regression from scratch :
