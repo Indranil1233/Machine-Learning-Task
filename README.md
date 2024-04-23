@@ -11,11 +11,41 @@ A code to perform time series forecasting.ipynb: This script contains code for p
 Data Preprocessing :
 This script provides functions for preprocessing and cleaning raw data, including handling missing values, removing duplicates, and performing feature scaling.
 
-Logistic Regression from scratch :
-This script implements logistic regression from scratch. It includes functions for sigmoid function, log loss.
-
-Anomaly Detection: Here, you'll find an implementation of an anomaly detection from scratch. The script identifies anomalies in a dataset based on deviations from a normal distribution.
 Image Classification using CNN:
 
-Time Series Forecasting:
-A code to perform time series forecasting.ipynb: This script contains code for performing time series forecasting using techniques like ARIMA ,ARMA , SARIMA. IT includes code to evaluate the performance of an ARIMA model using the mean squared error (MSE) metric from scikit-learn.
+Anomaly Detection: Here, you'll find an implementation of an anomaly detection from scratch. The script identifies anomalies in a dataset based on deviations from a normal distribution.
+
+
+Logistic Regression from scratch :
+This script implements logistic regression from scratch. It includes functions for sigmoid function, log loss.
+Data Generation:
+make_classification: This function generates a random n-class classification problem. In this case, it generates 50,000 samples with 15 features, where 10 features are informative and 5 are redundant. The classes are binary, and the class separation is set to 0.7.
+Data Preprocessing:
+train_test_split: Splits the data into training and testing sets with a test size of 25%.
+StandardScaler: Standardizes features by removing the mean and scaling to unit variance.
+Initialization:
+initialize_weights: Initializes the weights w to zeros and bias b to zero.
+Sigmoid Function:
+sigmoid: Implements the sigmoid activation function, which maps any real-valued number to the range [0, 1].
+Log Loss Function:
+logloss: Calculates the logistic loss or log loss, which is the loss function used in logistic regression.
+Gradient Descent Functions:
+gradient_dw: Calculates the gradient of the weight vector w.
+gradient_db: Calculates the gradient of the bias term b.
+Custom Logistic Regression Function:
+custom_lr: Implements logistic regression training using gradient descent. It iterates through the training data for a specified number of epochs, updating weights and biases using gradients calculated by gradient_dw and gradient_db. It also calculates the training and testing log loss at each epoch.
+Training:
+alpha, eta, and epochs are hyperparameters for the learning rate, regularization parameter, and number of epochs, respectively.
+w, b, log_loss_train, and log_loss_test are the outputs of the custom_lr function, representing the learned weights and biases, and the training and testing log loss values over epochs.
+This code provides a basic implementation of logistic regression from scratch for binary classification tasks.
+
+
+
+
+
+
+
+
+
+
+
