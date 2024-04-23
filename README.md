@@ -52,6 +52,18 @@ Augmentation techniques include rescaling, shear range, zoom range, and horizont
 
 Anomaly Detection: Here, you'll find an implementation of an anomaly detection from scratch. The script identifies anomalies in a dataset based on deviations from a normal distribution.
 
+There is a functionality to read and write CSV files.
+AnomalyDetector Class implements an anomaly detection algorithm based on Z-scores.
+the cose Initializes the detector with a threshold value.
+fit(X):its the detector to the provided data X by calculating mean and standard deviation for each feature.
+detect_anomalies(X): Detects anomalies in the provided data X based on the calculated mean and standard deviation. Returns a boolean list indicating whether each sample is anomalous or not.
+Code Converts the list of data to a numpy array X.
+Anomaly Detection:
+Initializes an AnomalyDetector object.
+Fits the detector to the data.
+Detects anomalies in the data.
+Prints the indices of anomalies found in the data.
+
 
 Logistic Regression from scratch :
 
