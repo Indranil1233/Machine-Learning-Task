@@ -6,7 +6,9 @@ This repository contains Python code and resources for various machine learning 
 Files
 
 Time Series Forecasting:
-A code to perform time series forecasting.ipynb: This script contains code for performing time series forecasting using techniques like ARIMA ,ARMA , SARIMA.
+
+A code to perform time series forecasting.ipynb:
+This script contains code for performing time series forecasting using techniques like ARIMA ,ARMA , SARIMA.
 First important libraries are imported then data loading and processing is done.
 The data is split into training and testing sets based on a specified date.
 ARIMA (AutoRegressive Integrated Moving Average) model is built and fitted to the training data.
@@ -17,7 +19,21 @@ The RMSE values for each model are printed.
 
 
 Data Preprocessing :
-This script provides functions for preprocessing and cleaning raw data, including handling missing values, removing duplicates, and performing feature scaling.
+
+The script imports necessary libraries.
+The dataset is loaded from a CSV file.
+Data Type Conversionis done.
+Some columns are converted to appropriate data types such as object, category, and datetime.
+Missing values are checked using isnull().sum().
+Outliers are handled using both Z-score and IQR methods.
+Z-score normalization is performed to scale numerical features.
+Data is scaled using both Z-score and Min-Max scaling techniques.
+Categorical variables are label encoded using LabelEncoder.
+The dataset is split into training and testing sets.
+Median values for Y Train and Y Test variables are calculated.
+Skewness and kurtosis of the original and transformed data are calculated.
+Distribution plots are created to visualize the original and transformed data.
+
 
 Image Classification using CNN:
 
