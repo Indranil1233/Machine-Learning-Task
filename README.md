@@ -37,6 +37,7 @@ Distribution plots are created to visualize the original and transformed data.
 
 Image Classification using CNN:
 
+This program is partially implemented some part in it is not completed.
 This code implements a Convolutional Neural Network (CNN) model using the Keras library for image classification tasks. 
 
 The code imports the necessary modules from Keras to build and train the CNN model.
