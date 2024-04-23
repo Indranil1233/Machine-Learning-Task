@@ -50,7 +50,7 @@ ImageDataGenerator is used to generate augmented images for training data .
 Augmentation techniques include rescaling, shear range, zoom range, and horizontal flip.
 
 
-Anomaly Detection: Here, you'll find an implementation of an anomaly detection from scratch. The script identifies anomalies in a dataset based on deviations from a normal distribution.
+Anomaly Detection: Here, you'll find an implementation of an anomaly detection from scratch.
 
 There is a functionality to read and write CSV files.
 AnomalyDetector Class implements an anomaly detection algorithm based on Z-scores.
